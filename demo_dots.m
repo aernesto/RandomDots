@@ -17,7 +17,8 @@ KbName('UnifyKeyNames');
 defineGlobals;
 screen_struct.cur_screen = 0;
 screen_struct.mon_width_cm = 37;
-screen_struct.mon_refresh = 75;     %change if needed but it must be 75 Hz for correct 
+% for variable below, initial 75Hz generated bug on my Fedora 28 laptop
+screen_struct.mon_refresh = 60; %   %change if needed but it must be 75 Hz for correct 
                                     %replication of the stimulus
 
     % wait for all keys to be released
